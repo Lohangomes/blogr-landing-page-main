@@ -1,0 +1,74 @@
+.pro-futuro {
+  margin: 8rem 0 4rem 0;
+
+  .container {
+    @include display-flex(center, flex-start, 8rem);
+    flex-flow: column;
+    padding-right: 0;
+    overflow: hidden;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .futuro-conteudo {
+    display: grid;
+    grid-template-columns: minmax(200px, 508px) 1fr;
+    position: relative;
+    left: 12rem;
+    gap: 3rem;
+    & > div {
+      max-width: 50.8rem;
+
+      @include display-flex(center, flex-start, 8rem);
+      flex-flow: column;
+
+      p {
+        margin-top: 3rem;
+      }
+    }
+
+    picture {
+      img {
+        position: relative;
+        left: 9rem;
+        bottom: 17rem;
+      }
+    }
+  }
+
+  @include midia(1300px) {
+    .container {
+      padding-right: 4rem;
+    }
+
+    .futuro-conteudo {
+      grid-template-columns: 1fr;
+
+      left: initial;
+
+      & > div {
+        text-align: center;
+        max-width: 100%;
+        grid-row: 2 / 3;
+      }
+
+      picture {
+        grid-row: 1 / 2;
+        img {
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include midia(425px){
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+  }
+}

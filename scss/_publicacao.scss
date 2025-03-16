@@ -1,0 +1,30 @@
+.publicação-moderna {
+  margin-top: 5rem;
+  @include display-flex(center, flex-start, 4rem);
+  flex-flow: column;
+
+  .publicação-texto {
+    text-align: center;
+    p {
+      margin-top: 1.5rem;
+      color: rgba(255, 255, 255, 0.781);
+    }
+  }
+
+  .btn-publicacao {
+    @include display-flex(center, flex-start, 2rem);
+  }
+
+  @include midia(425px) {
+    .publicação-texto {
+      h1 {
+        font-size: 3.2rem;
+      }
+    }
+
+    .btn-publicacao {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

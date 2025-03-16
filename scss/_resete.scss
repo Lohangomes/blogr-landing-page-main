@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $fonte-primaria;
+   
+}

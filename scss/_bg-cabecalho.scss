@@ -1,0 +1,21 @@
+.bg-fundo-cabecalho {
+  position: relative;
+  background: rgba(255, 96, 96, 1) url(../images/bg-pattern-intro-desktop.svg)
+    25% center no-repeat;
+  background-size: auto;
+  border-radius: 0 0 0 12rem;
+
+  .container {
+    @include display-flex(center, flex-start, 8rem);
+    flex-flow: column;
+    height: 100%;
+  }
+
+  @include midia(425px) {
+    height: 60rem;
+
+    .container {
+      padding-inline: 2rem;
+    }
+  }
+}

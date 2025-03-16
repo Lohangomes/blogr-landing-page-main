@@ -1,0 +1,46 @@
+.info-ilustracao {
+  margin: 8rem 0 4rem 0;
+
+  .container {
+    padding-left: 0;
+  }
+
+  .ilustracao-conteudo {
+    position: relative;
+    right: 216px;
+    display: grid;
+    grid-template-columns: 1fr minmax(20rem, 50rem);
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    .info-texto {
+      @include display-flex(center, flex-start, 4rem);
+      flex-flow: column;
+
+      .texto {
+        @include display-flex(flex-start, flex-start, 2rem);
+        flex-flow: column;
+      }
+    }
+  }
+
+  @include midia(1300px) {
+    .container {
+      padding-left: 4rem;
+    }
+
+    .ilustracao-conteudo {
+      grid-template-columns: 1fr;
+      right: initial;
+
+      .info-texto {
+        text-align: center;
+
+        .texto {
+          align-items: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@mixin display-flex($centrox, $centroy, $gap) {
+  display: flex;
+  align-items: $centrox;
+  justify-content: $centroy;
+  gap: $gap;
+}
+
+@mixin btn-padrao($color, $espacamento, $bg) {
+  color: $color;
+  background-color: $bg;
+  padding: $espacamento;
+}
+
+@mixin midia($telas) {
+  @media (max-width: $telas) {
+    @content;
+  }
+}

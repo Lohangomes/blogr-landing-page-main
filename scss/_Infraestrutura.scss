@@ -1,0 +1,74 @@
+.infraestrutura {
+  position: relative;
+  height: 40rem;
+  background: url(../images/bg-pattern-circles.svg) no-repeat -75% 83%;
+  background-size: auto;
+  &::after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgb(44, 45, 63);
+    background: linear-gradient(
+      90deg,
+      rgba(44, 45, 63, 1) 23%,
+      rgba(63, 65, 100, 1) 45%
+    );
+    position: absolute;
+    z-index: -1;
+    border-radius: 0 8rem 0 8rem;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  @include midia(1000px) {
+    margin-block: 8rem;
+    height: 90rem;
+  }
+
+  @include midia(425px) {
+    margin-top: 20rem;
+    height: 50rem;
+  }
+}
+
+.infraestrutura-conteudo {
+  @include display-flex(center, center, 3rem);
+  height: 100%;
+  .infra-texto {
+    max-width: 52rem;
+    h2 {
+      color: white;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.808);
+      font-weight: 300;
+      margin-top: 1.5rem;
+    }
+  }
+
+  @include midia(1000px) {
+    @include display-flex(center, center, 3rem);
+    flex-flow: column;
+    text-align: center;
+
+    picture {
+      margin: 0 auto;
+    }
+  }
+
+  @include midia(425px) {
+    @include display-flex(flex-start, end, 3rem);
+
+    picture {
+      position: absolute;
+      left: 0;
+      top: -200px;
+    }
+  }
+}

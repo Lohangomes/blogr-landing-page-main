@@ -1,0 +1,62 @@
+a {
+  color: $texto-link-color;
+  font-family: $fonte-secundaria;
+  font-weight: 500;
+}
+
+h1 {
+  color: $cor-texto-primario;
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  color: $cor-texto-titulos;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+h6 {
+  color: $cor-texto-primario;
+  font-family: $fonte-secundaria;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+p {
+  line-height: 150%;
+}
+
+.btn-primario {
+  @include btn-padrao($texto-btn-primario, 1.4rem 3rem, $bg-btn-primario);
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: $fonte-secundaria;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: $hover-bg-primario;
+    color: $hover-texto-primario;
+  }
+
+  &.border {
+    color: $texto-btn-secundario;
+    background-color: transparent;
+    border: 1px solid white;
+
+    &:hover {
+      background-color: $hover-bg-secundario;
+      color: $hover-btn-secundario;
+    }
+  }
+
+ 
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.min.css" />
+</head>
+
+<body>
+  <div class="bg-fundo-cabecalho">
+    <div class="container">
+      <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+          <a class="logo" href="home.html">
+            <img src="./images/logo.svg" alt="logo blogr" />
+          </a>
+          <button 
+          aria-label="abrir menu" 
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu="" 
+          class="icone-menu">
+
+          </button>
+          <nav class="navecagao" id="menu">
+            <ul class="lista">
+              <li>
+                <a 
+                aria-haspopup="true"
+                aria-expanded="false" data-item="item" href="#">Product</a>
+                <ul class="dropdown">
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Integrations</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a 
+                aria-haspopup="true"
+                aria-expanded="false" 
+                data-item="item" href="#">Company</a>
+                <ul class="dropdown esquerda">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a 
+                aria-haspopup="true"
+                aria-expanded="false"
+                 data-item="item" 
+                 href="#">Connect</a>
+                <ul class="dropdown direita">
+                  <li><a href="#"> Contact</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="area-usuario">
+              <a href="#">Login</a>
+              <a class="btn-primario" href="#">Sign Up</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="publicação-moderna">
+        <div class="publicação-texto">
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+        </div>
+
+        <div class="btn-publicacao">
+          <a class="btn-primario" href="#">Start for Free</a>
+          <a class="btn-primario border" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="pro-futuro">
+      <div class="container">
+        <h2>Designed for the future</h2>
+        <div class="futuro-conteudo">
+          <div>
+            <div class="texto">
+              <h3>Introducing an extensible editor</h3>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+            <div class="texto">
+              <h3> Robust content management</h3>
+              <p>
+                Flexible content management enables users to easily move through posts. Increase the usability of your
+                blog
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+                control.
+              </p>
+            </div>
+          </div>
+
+          <picture>
+            <source media="(max-width:425px )" srcset="./images/illustration-editor-mobile.svg">
+            <img src="./images/illustration-editor-desktop.svg" alt=""">
+          </picture>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class=" infraestrutura">
+            <div class="container">
+              <div class="infraestrutura-conteudo">
+                <picture>
+                  <img src="./images/illustration-phones.svg" alt="">
+                </picture>
+
+                <div class="infra-texto">
+                  <h2>State of the Art Infrastructure</h2>
+                  <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+                    connectivity.
+                    This ensures your site will load instantly, no matter where your readers are, keeping your site
+                    competitive.</p>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <section class="info-ilustracao">
+      <div class="container">
+        <div class="ilustracao-conteudo">
+          <picture>
+            <source media="(max-width:425px )" srcset="./images/illustration-laptop-mobile.svg">
+            <img src="./images/illustration-laptop-desktop.svg" alt="""">
+          </picture>
+
+          <div class="info-texto">
+            <div class="texto">
+              <h3>Free, open, simple</h3>
+              <p>Blogr is a free and open source application backed by a large community of helpful developers. It
+                supports
+                features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+                tools,
+                and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+              </p>
+            </div>
+            <div class="texto">
+              <h3>Powerful tooling</h3>
+              <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and
+                deployment a breeze, but
+                capable of producing even the most complicated sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="conteudo-rodape">
+        <a class="logo" href="home.html">
+          <img src="./images/logo.svg" alt="logo blogr">
+        </a>
+
+        <section class="nav-rodape">
+          <h6>Product</h6>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </section>
+
+        <section class="nav-rodape">
+          <h6>Product</h6>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </section>
+
+        <section class="nav-rodape">
+          <h6>Connect</h6>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
